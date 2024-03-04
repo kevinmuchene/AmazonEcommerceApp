@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCategory">
+
+    <TextView
+        android:id="@+id/customerName"
+        android:layout_width="148dp"
+        android:layout_height="24dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="1dp"
+    android:text="Welcome Tom!" />
+
+
+    <TextView
+        android:id="@+id/headingCategory"
+        android:layout_width="148dp"
+        android:layout_height="27dp"
+        android:text="Shop by Categories"
+        android:layout_below="@id/customerName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp" />
+
+    <ImageView
+        android:id="@+id/homeAndKitchenImg"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/headingCategory"
+        android:layout_marginTop="74dp"
+        android:layout_marginStart="40dp"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/homekitchen" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home and Kitchen"
+        android:layout_below="@id/homeAndKitchenImg"
+        android:layout_alignStart="@id/homeAndKitchenImg"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/beautyAndPersonalCareImg"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/homeAndKitchenImg"
+        android:layout_alignTop="@id/homeAndKitchenImg"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/beauty" />
+
+    <TextView
+        android:id="@+id/beautyAndPersonalCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beauty and personal care"
+        android:layout_below="@id/beautyAndPersonalCareImg"
+        android:layout_alignStart="@id/beautyAndPersonalCareImg"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/petSuppliesImg"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="40dp"
+        android:src="@drawable/petsupplies" />
+
+    <TextView
+        android:id="@+id/petSupplies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet supplies"
+        android:layout_below="@id/petSuppliesImg"
+        android:layout_alignStart="@id/petSuppliesImg"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:id="@+id/toysAndGamesImg"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_toEndOf="@id/petSuppliesImg"
+        android:layout_alignTop="@id/petSuppliesImg"
+        android:layout_marginStart="20dp"
+       android:src="@drawable/toysandgames" />
+
+    <TextView
+        android:id="@+id/toysAndGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toys and games"
+        android:layout_below="@id/toysAndGamesImg"
+        android:layout_alignStart="@id/toysAndGamesImg"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
